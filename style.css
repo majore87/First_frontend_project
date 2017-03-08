@@ -1,0 +1,355 @@
+/* GENERAL STYLE */
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	width: 1200px;
+	margin: 200px auto;
+}
+[class*="col-"] {
+	float: left;
+}
+
+/* COLUMN WIDTH */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* COLUMN OFFSET */
+
+.col-offset-0 {margin-left: 0%;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+/* CLEARFIX */
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* LOGO IMAGE STYLE */
+
+.menu{
+	margin: 0 auto;
+}
+header > nav img {
+	height: 50px;
+	margin: right;
+	right: 100px;
+}
+
+/* NAVIGATION, LINKS */
+
+header {
+	background-color: #313332;
+	height: 50px;
+}
+header > nav ul {	
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	float: right;
+}
+header > nav ul > li {
+  	display: inline-block;
+}
+header > nav ul > li a {
+ 	line-height: 50px;
+ 	padding: 0 20px;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	color: #FFF;
+ 	display: inline-block;
+}
+header > nav ul > li a:hover {
+	background: #ccc;
+}
+
+/* HERO STYLE */
+
+.hero {
+	background: url(http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAcktGUUxrS2lLRDQ);
+	width: 100%;
+	height: calc(100vh - 50px);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+/* TEXT ON HERO STYLE */
+
+.slogan {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #FFF;
+	max-width: 800px;
+	padding-right: 300px;
+	text-align: left;
+	padding-left: 40px;
+	position: absolute;
+	height: 150px;
+	top: 50%;
+	right: 0;
+	margin-top: -75px;
+}
+.slogan h1, .slogan p {
+	text-transform: uppercase;
+}
+.slogan > h1 {
+	font-size: 28px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.slogan > p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* BENEFITS SECTION STYLE */
+
+.benefit .row {
+	width: 100%;
+	max-width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}
+.icon-btn {
+	font-size: 125px;
+	width: 180px;
+	height: 200px;
+	border: none;
+	border-radius: 20px;
+	color: #FFF;
+	background-color: #313332;
+	cursor: pointer;	
+}
+.benefit .element {
+	padding: 20px;
+	box-sizing: border-box;
+}
+.benefit .element:hover .icon-btn {
+	background-color: #00C7E8;
+}
+.benefit .element h1 {
+	text-transform: uppercase; 
+}
+.benefit .element:hover h1 {
+	color: #00C7E8;
+}
+.element p {
+	color: #808080;
+	text-align: center;
+}
+
+/* FEATURED WORKS */
+
+.works .row {
+	width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}
+.works .featured h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.works .featured p {
+	color: #808080;
+	font-size: 30px;
+}
+
+/* GALLERY STYLE */
+
+.gallery {
+	width: 100%;
+	position: relative;
+}
+.gallery img {
+	width: 100%;
+	height: 260px;
+}
+.layer {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	display: block;
+	transition: 0.5s;
+	line-height: 260px;
+}
+.layer i.fa {
+ 	font-size: 25px;
+ 	background-color: #fff;
+ 	padding: 15px;
+ 	border-radius: 20%;
+ 	margin: auto 5px;
+ 	visibility: hidden;
+}
+.layer:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.layer:hover i.fa {
+	visibility: visible;	
+}
+
+/* TEAM STYLES */
+
+.person .item {
+	margin: auto;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.item-1 {background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAVktNek5kVDBfTzQ");}
+.item-2 {background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqANGphbTIyem1FY3M");}
+.item-3 {background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAekkxcEczUm95Y28");}
+.item-4 {background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqASllOZllCMV9lNDg");}
+
+.team {
+	width: 80vw;
+	text-align: center;
+}
+.team [class*="col-"] {
+	display: inline-block;
+}
+.team .person .profession {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	display: none;
+	text-transform: uppercase;
+}
+.team .person:hover .profession {
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.team .person .profession p {
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFF;	
+}
+.team .person .profession .flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.team .person .name p {
+	color: #5E5E5C;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/* Tablet section */
+
+.tablet {
+	background-color: #828483;
+	width: 100%;
+	position: relative;
+	height: 500px;
+}
+.tablet .tablet-picture { 
+	margin-left: 15%;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+}
+.tablet .awesome-title {
+	margin-top: 30px;
+	margin-left: 50%;
+}
+.tablet .awesome-title h1 {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+}
+.tablet .awesome-title p {
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* Numbers DATA Container */
+
+.numbers [class*="col-"] {
+	text-align: center;
+}
+.numbers .data h1 {
+	font-size: 60px;
+	font-weight: bold;
+	color: #313332;
+	margin-bottom: 0;
+}
+.numbers .data p {
+ 	color: #00C7E8;
+ 	font-size: 25px;
+ 	text-transform: uppercase;
+ }
+
+/* ABOUT STYLES */
+
+.about {
+	background-color: #313332;
+	width: 100%;
+	margin-bottom: 0;
+}
+.about .title h1 {
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+.about [class*="col-"] p {
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+}
+.about .address-type p {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.about .address-text p {
+	text-align: left;
+}
+
+/* FOOTER STYLE */
+
+footer {
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	background-color: #000;
+	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
+}
